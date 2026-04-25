@@ -65,7 +65,7 @@ body::after {
 /* Sidebar */
 .sidebar {
   width: 240px;
-  min-height: 100vh;
+  height: 100vh;
   background: var(--bg2);
   border-right: 1px solid var(--border);
   display: flex;
@@ -73,7 +73,7 @@ body::after {
   position: fixed;
   top: 0; left: 0; bottom: 0;
   z-index: 10;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .logo {
@@ -187,8 +187,7 @@ body::after {
 /* Agent nav */
 .agent-nav {
   padding: 1rem 1.25rem;
-  flex: 1;
-  overflow-y: auto;
+  padding-bottom: 2rem;
 }
 .agent-links { display: flex; flex-direction: column; gap: 4px; }
 .agent-link {
