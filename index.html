@@ -542,6 +542,9 @@ body::after {
       <button class="agent-link" onclick="setAgent('analyzer')">
         <span class="agent-emoji">📊</span> Analizar métricas
       </button>
+      <button class="agent-link" onclick="setAgent('stories')">
+        <span class="agent-emoji">📱</span> Stories
+      </button>
     </div>
   </div>
 </div>
@@ -611,11 +614,57 @@ body::after {
     <div class="agent-panel" id="panel-photo">
       <div class="input-panel">
         <div class="input-panel-title">Agente Editor — Prompt Visual</div>
-        <div class="quick-prompts">
-          <button class="qp" onclick="fillPrompt('photo', 'Foto de arepa venezolana con queso amarillo')">🧀 Arepa</button>
-          <button class="qp" onclick="fillPrompt('photo', 'Parrilla completa con chimichurri')">🥩 Parrilla</button>
-          <button class="qp" onclick="fillPrompt('photo', 'Gráfico de velas NQ con señal de entrada')">📊 Gráfico NQ</button>
-          <button class="qp" onclick="fillPrompt('photo', 'Imagen de marca del restaurante venezolano')">🏠 Branding</button>
+        <div style="margin-bottom:0.75rem;">
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Burgers</div>
+          <div class="quick-prompts">
+            <button class="qp" onclick="fillPrompt('photo', 'Hamburguesa La Felicitta $3.500 pan brioche carne papas hilo tomate lechuga')">La Felicitta $3.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Hamburguesa La Pelua $8.500 carne mechada huevo tocino lechuga queso gouda papas hilo')">La Pelua $8.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Hamburguesa Triple $9.990 triple proteina tocino lechuga tomate queso cheddar papas hilo')">Triple $9.990</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Hamburguesa Super de Carne $6.000 doble proteina huevo queso gouda tocino papas hilo')">Super $6.000</button>
+          </div>
+        </div>
+        <div style="margin-bottom:0.75rem;">
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Perros Calientes</div>
+          <div class="quick-prompts">
+            <button class="qp" onclick="fillPrompt('photo', 'Perro caliente El de Luka $1.000 pan 15cm salchicha repollo papas hilo ketchup mayo')">El de Luka $1.000</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Perro caliente El Peluo $3.990 pan 22cm carne mechada repollo tomate papas hilo queso gouda')">El Peluo $3.990</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Perro caliente El Americano $3.990 pan 22cm repollo tocineta queso cheddar derretido papas hilo')">El Americano $3.990</button>
+          </div>
+        </div>
+        <div style="margin-bottom:0.75rem;">
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Arepas y Cachapas</div>
+          <div class="quick-prompts">
+            <button class="qp" onclick="fillPrompt('photo', 'Arepa venezolana $3.500 rellena de carne mechada queso gouda caraotas negras tajadas')">Arepa $3.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Cachapa cochino frito $8.500 queso llanero rallado natilla pulpa cochino 250gr')">Cachapa Cochino $8.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Cachapa queso de mano $7.500 medio kilo queso de mano mantequilla natilla')">Cachapa Queso Mano $7.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Cachapa Cochino Queso $10.000 medio kilo queso de mano pulpa cochino mantequilla natilla')">Cachapa Full $10.000</button>
+          </div>
+        </div>
+        <div style="margin-bottom:0.75rem;">
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Arroz Chino y Pepitos</div>
+          <div class="quick-prompts">
+            <button class="qp" onclick="fillPrompt('photo', 'Arroz chino venezolano promo $4.500 arroz salteado salsa de soya pollo jamon diente de dragon')">Arroz Promo $4.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Arroz Especial La Felicitta $12.000 arroz con jamon pollo cerdo camaron diente de dragon huevo cebollin')">Arroz La Felicitta $12.000</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Pepito de Carne 15cm $8.500 pan oregano parmesano 200gr carne plancha huevo tocineta queso gouda papas hilo')">Pepito Carne $8.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Pepito Mixto BESTIA 30cm $14.990 carne pollo chorizo chuleta ahumada huevo tocineta queso gouda')">Pepito Bestia $14.990</button>
+          </div>
+        </div>
+        <div style="margin-bottom:0.75rem;">
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Tequeños, Empanadas y Pasapalos</div>
+          <div class="quick-prompts">
+            <button class="qp" onclick="fillPrompt('photo', 'Tequeños 25cm de queso $2.500 venezolanos crujientes queso derretido por dentro')">Tequeños $2.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Mix pasapalos para evento mini tequeños mini pasteles bolitas de carne mini pizzas mini empanadas')">Mix Pasapalos</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Empanadas venezolanas surtidas carne mechada pollo pabellon caraota queso $2.500')">Empanadas $2.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Patacon especial $8.500 carne mechada jamon tocineta queso gauda ensalada tomate lechuga')">Patacon $8.500</button>
+          </div>
+        </div>
+        <div style="margin-bottom:0.75rem;">
+          <div style="font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px;">Postres y Extras</div>
+          <div class="quick-prompts">
+            <button class="qp" onclick="fillPrompt('photo', 'Churros con salsas $5.500 8 churros crujientes con manjar y chocolate azucar flor')">Churros $5.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Papas fritas bacon y cheddar $5.500 papas fritas tocino ahumado queso cheddar derretido')">Papas Cheddar $5.500</button>
+            <button class="qp" onclick="fillPrompt('photo', 'Grafico de velas NQ con senal de entrada trading LeninTrader')">NQ Trading</button>
+          </div>
         </div>
         <div class="prompt-row">
           <textarea class="prompt-textarea" id="input-photo" placeholder="Describe la foto o visual que necesitas..."></textarea>
@@ -666,6 +715,50 @@ body::after {
       <div class="output-panel" id="out-analyzer"></div>
     </div>
 
+    <!-- STORIES -->
+    <div class="agent-panel" id="panel-stories">
+      <div class="input-panel">
+        <div class="input-panel-title">Agente Stories — Secuencia de 5 Slides</div>
+        <div class="quick-prompts">
+          <button class="qp" onclick="fillPrompt('stories', 'Promocion del dia en La Felicitta')">Promo del dia</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Nuevo plato disponible hoy')">Nuevo plato</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Detras de camaras de la cocina')">Detras camaras</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Delivery disponible ahora')">Delivery</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Senal de trading NQ de hoy')">Senal NQ</button>
+        </div>
+        <div class="prompt-row">
+          <textarea class="prompt-textarea" id="input-stories" placeholder="Describe el tema de tus Stories..."></textarea>
+          <button class="run-btn" id="btn-stories" onclick="runAgent('stories')">
+            <span class="run-arrow">📱</span>
+            <span>Crear</span>
+          </button>
+        </div>
+      </div>
+      <div class="output-panel" id="out-stories"></div>
+    </div>
+
+    <!-- STORIES -->
+    <div class="agent-panel" id="panel-stories">
+      <div class="input-panel">
+        <div class="input-panel-title">Agente Stories — Secuencia de 5 Slides</div>
+        <div class="quick-prompts">
+          <button class="qp" onclick="fillPrompt('stories', 'Promocion del dia en La Felicitta')">Promo del dia</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Nuevo plato disponible hoy')">Nuevo plato</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Detras de camaras de la cocina')">Detras camaras</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Delivery disponible ahora')">Delivery</button>
+          <button class="qp" onclick="fillPrompt('stories', 'Senal de trading NQ de hoy')">Senal NQ</button>
+        </div>
+        <div class="prompt-row">
+          <textarea class="prompt-textarea" id="input-stories" placeholder="Describe el tema de tus Stories..."></textarea>
+          <button class="run-btn" id="btn-stories" onclick="runAgent('stories')">
+            <span class="run-arrow">📱</span>
+            <span>Crear</span>
+          </button>
+        </div>
+      </div>
+      <div class="output-panel" id="out-stories"></div>
+    </div>
+
     <!-- HISTORIAL -->
     <div class="history-section" id="historySection" style="display:none;">
       <div class="history-title">Historial de sesión</div>
@@ -683,8 +776,26 @@ let state = {
   platform: 'ig',
   agent: 'post',
   apiKey: '',
-  history: []
+  history: [],
+  postHistory: JSON.parse(localStorage.getItem('sa_post_history') || '[]')
 };
+
+function getHistory() {
+  if (state.postHistory.length === 0) return 'Ninguno todavia - es el primer post.';
+  return state.postHistory.slice(0, 10).map((h, i) => `${i+1}. [${h.brand}/${h.platform}] ${h.topic}`).join('\n');
+}
+
+function saveToHistory(topic) {
+  const entry = {
+    brand: state.brand,
+    platform: state.platform,
+    topic: topic.substring(0, 80),
+    date: new Date().toLocaleDateString('es-CL')
+  };
+  state.postHistory.unshift(entry);
+  if (state.postHistory.length > 30) state.postHistory.pop();
+  localStorage.setItem('sa_post_history', JSON.stringify(state.postHistory));
+}
 
 // Load saved key
 const savedKey = localStorage.getItem('sa_key');
@@ -779,86 +890,132 @@ function getPlatformContext() {
 }
 
 const systemPrompts = {
-  post: (brand, platform) => `Eres un sistema multiagente de marketing para redes sociales. Actúas como dos agentes en secuencia:
-
-AGENTE 1 — EDITOR VISUAL: Genera un prompt detallado en inglés para crear la imagen en Canva AI o Adobe Firefly. Especifica: composición, colores, iluminación, elementos, dimensiones correctas para la plataforma.
-
-AGENTE 2 — COPYWRITER: Escribe 3 versiones de caption adaptadas a la plataforma, cada una con diferente ángulo (emocional / informativo / llamada a acción directa). Incluye los hashtags al final de cada versión.
-
-CONTEXTO DE MARCA:
-${brand}
-
-ESPECIFICACIONES DE PLATAFORMA:
-${platform}
-
-Formato de respuesta:
----
-🖼️ PROMPT VISUAL (Canva AI / Firefly)
-[prompt en inglés]
-
-📐 Dimensiones: [especificar]
----
-✍️ CAPTION OPCIÓN 1 — [Ángulo emocional]
-[caption completo]
-#hashtags
-
-✍️ CAPTION OPCIÓN 2 — [Ángulo informativo]
-[caption completo]
-#hashtags
-
-✍️ CAPTION OPCIÓN 3 — [CTA directo]
-[caption completo]
-#hashtags
----`,
-
-  copy: (brand, platform) => `Eres el Agente Copywriter especializado en redes sociales latinoamericanas.
-
-CONTEXTO DE MARCA:
-${brand}
-
-ESPECIFICACIONES DE PLATAFORMA:
-${platform}
-
-Escribe 3 versiones de caption con diferentes ángulos. Cada una debe:
-- Tener un gancho fuerte en la primera línea
-- Ser auténtica y no genérica
-- Incluir llamada a acción clara
-- Tener hashtags optimizados al final
-
-Marca claramente cada opción con su ángulo estratégico.`,
-
-  photo: (brand, platform) => `Eres el Agente Editor Visual especializado en contenido para redes sociales.
-
-CONTEXTO DE MARCA:
-${brand}
-
-PLATAFORMA DESTINO: ${platform}
-
-Genera:
-1. Un prompt detallado en inglés para Canva AI o Adobe Firefly (muy específico: composición, colores, iluminación, estilo fotográfico, elementos incluidos y excluidos)
-2. Un prompt alternativo en inglés para Midjourney o DALL-E
-3. Instrucciones de edición manual en Canva: filtros, tipografía recomendada, colores exactos en hex, elementos gráficos a agregar
-4. Dimensiones exactas para la plataforma
-
-Sé muy específico y técnico en los prompts.`,
-
-  calendar: (brand, platform) => `Eres el Agente Planificador de Contenido.
+  post: (brand, platform, history) => `Eres un sistema multiagente de marketing para redes sociales. Actuas como dos agentes en secuencia.
 
 CONTEXTO DE MARCA:
 ${brand}
 
 PLATAFORMA: ${platform}
 
-Crea un calendario de contenido detallado. Para cada día incluye:
-- Fecha y día de la semana
-- Tipo de contenido (post feed / Story / Reel / Video)
-- Tema específico
-- Idea de visual
-- Horario óptimo de publicación
-- Objetivo del post (alcance / engagement / conversión)
+POSTS YA PUBLICADOS (NO REPETIR estos temas):
+${history}
 
-Alterna entre: contenido de producto, detrás de cámaras, educativo, testimonial, promocional.
-Sé específico y accionable, no genérico.`,
+AGENTE 1 - EDITOR VISUAL: Genera un prompt OPTIMIZADO PARA CHATGPT/DALL-E en ingles, maximo 150 palabras, listo para pegar directamente. El prompt debe especificar:
+- Estilo: dark dramatic background, professional Venezuelan restaurant flyer
+- El plato especifico con descripcion apetitosa detallada
+- Tipografia: bold white and gold text visible in image
+- Logo LA FELICITTA en esquina superior
+- Precio en badge rojo brillante
+- Iluminacion: dramatic warm golden hour lighting, high contrast
+- Efectos: fire sparks, golden glows, steam
+- Datos: Barros Arana 504 Iquique, +56 9 6337 6893, @lafelicittacl
+- Formato: 1080x1080px o 1080x1920px segun plataforma
+
+AGENTE 2 - COPYWRITER: Escribe 3 versiones de caption adaptadas a la plataforma con angulo diferente. Cada una con gancho fuerte, cuerpo emocional, CTA claro y hashtags.
+
+AGENTE 3 - STORIES: Escribe 3 slides de texto para Instagram Stories sobre el mismo tema:
+- Slide 1: Gancho (max 8 palabras, impacta)
+- Slide 2: Detalle o beneficio (max 15 palabras)
+- Slide 3: CTA directo (max 10 palabras)
+
+Formato de respuesta:
+---
+PROMPT CHATGPT (pegar directo):
+[prompt en ingles listo para usar]
+
+CAPTION OPCION 1 - [angulo]:
+[caption + hashtags]
+
+CAPTION OPCION 2 - [angulo]:
+[caption + hashtags]
+
+CAPTION OPCION 3 - [angulo]:
+[caption + hashtags]
+
+STORIES (3 slides):
+Slide 1: [texto]
+Slide 2: [texto]
+Slide 3: [texto]
+---`,
+
+  copy: (brand, platform, history) => `Eres el Agente Copywriter especializado en redes sociales latinoamericanas.
+
+CONTEXTO DE MARCA:
+${brand}
+
+PLATAFORMA: ${platform}
+
+TEMAS YA USADOS (NO REPETIR):
+${history}
+
+Escribe 3 versiones de caption con angulos diferentes (emocional / informativo / urgencia). Cada una con gancho fuerte, cuerpo autentico, CTA claro y hashtags optimizados.
+
+Ademas genera 3 slides para Stories:
+Slide 1: Gancho impactante (max 8 palabras)
+Slide 2: Beneficio o detalle (max 15 palabras)
+Slide 3: CTA directo (max 10 palabras)`,
+
+  photo: (brand, platform, history) => `Eres el Agente Editor Visual especializado en flyers estilo restaurante venezolano profesional.
+
+CONTEXTO DE MARCA:
+${brand}
+
+ESTILO EXACTO La Felicitta:
+- Fondo negro oscuro dramatico con textura sutil
+- Tipografia bold gigante BLANCA y DORADA visible en la imagen
+- Foto del plato fotorrealista, iluminacion dramatica, contraste alto, colores vibrantes
+- Logo LA FELICITTA en badge negro con borde blanco esquina superior izquierda
+- Precio en badge rojo o amarillo brillante prominente
+- Datos: BARROS ARANA 504 IQUIQUE - +56 9 6337 6893 - @lafelicittacl
+- Efectos: chispas de fuego doradas, destellos, humo dramatico, glow calido
+- Badge circular "HECHO CON AMOR" o slogan corto
+- Bandera venezolana pequena como elemento decorativo
+- Barra inferior oscura con iconos de redes sociales
+
+PLATAFORMA: ${platform}
+
+REFERENCIA DE POSTS ANTERIORES (variar el angulo):
+${history}
+
+Genera:
+
+=== PROMPT CHATGPT (COPIAR Y PEGAR DIRECTO - EN INGLES) ===
+[Prompt de maximo 180 palabras, ultra especifico, listo para ChatGPT/DALL-E. Incluir: nombre del plato, ingredientes visibles, estilo tipografico bold, fondo negro, efectos de fuego y destello, logo, precio, datos de contacto, formato de imagen]
+
+=== PROMPT ALTERNATIVO (si el anterior no funciona) ===
+[Version simplificada de 80 palabras]
+
+=== INSTRUCCIONES CANVA (si usas foto real) ===
+Paso 1: [accion especifica]
+Paso 2: [accion especifica]
+Paso 3: [accion especifica]
+Colores hex: [lista de colores exactos]`,
+
+  calendar: (brand, platform, history) => `Eres el Agente Planificador de Contenido Semanal.
+
+CONTEXTO DE MARCA:
+${brand}
+
+PLATAFORMA PRINCIPAL: ${platform}
+
+CONTENIDO RECIENTE (NO REPETIR estos temas):
+${history}
+
+Crea un calendario de 7 dias COMPLETO y ACCIONABLE. Para cada dia:
+
+DIA X - [NOMBRE DIA]:
+- HORA: [hora optima de publicacion]
+- FORMATO: [Feed / Reel / Story / Carrusel]
+- TEMA: [tema especifico y concreto]
+- PLATO/PRODUCTO: [producto especifico del menu]
+- PROMPT CHATGPT: [prompt corto en ingles para generar la imagen, listo para pegar]
+- CAPTION: [caption completo con emojis y hashtags]
+- STORIES: Slide 1: [texto] | Slide 2: [texto] | Slide 3: [texto]
+- OBJETIVO: [alcance / engagement / conversion]
+
+Alterna entre: producto estrella, promocion, detras de camaras, testimonial, educativo venezolano, fin de semana especial.
+Incluye siempre el plato especifico del menu, precio real y CTA al WhatsApp.
+Para La Felicitta: domingos = sancocho, viernes/sabado = promos especiales, lunes = semana nueva.`,
 
   analyzer: (brand, platform) => `Eres el Agente Analista de Redes Sociales.
 
@@ -867,15 +1024,50 @@ ${brand}
 
 PLATAFORMA: ${platform}
 
-Analiza las métricas proporcionadas y entrega:
-1. Diagnóstico claro de qué funcionó y qué no
+Analiza las metricas proporcionadas y entrega:
+1. Diagnostico claro de que funciono y que no
 2. Patrones identificados (tipos de contenido, horarios, formatos)
 3. 3 recomendaciones concretas y accionables para mejorar
-4. Próximos pasos específicos para esta semana
-5. Métricas clave a monitorear
+4. Proximos pasos especificos para esta semana
+5. Metricas clave a monitorear
 
-Sé directo y específico, no des respuestas genéricas de marketing.`
+Se directo y especifico, no des respuestas genericas de marketing.`,
+
+  stories: (brand, platform, history) => `Eres el Agente de Stories especializado en contenido efimero de alta conversion.
+
+CONTEXTO DE MARCA:
+${brand}
+
+PLATAFORMA: ${platform}
+
+STORIES RECIENTES (NO REPETIR):
+${history}
+
+Genera una secuencia completa de 5 Stories para el tema indicado:
+
+STORY 1 - GANCHO:
+Texto: [max 6 palabras, impacta, genera curiosidad]
+Sticker sugerido: [encuesta / pregunta / cuenta regresiva]
+Color fondo: [hex]
+
+STORY 2 - DESARROLLO:
+Texto: [max 15 palabras, beneficio principal]
+Elemento visual sugerido: [foto del plato / video / boomerang]
+
+STORY 3 - PRUEBA SOCIAL:
+Texto: [frase de cliente o dato de impacto]
+Sticker: [calificacion de estrellas]
+
+STORY 4 - OFERTA:
+Texto: [precio / promocion / urgencia, max 10 palabras]
+Sticker: [cuenta regresiva si aplica]
+
+STORY 5 - CTA:
+Texto: [accion directa, max 8 palabras]
+Link sugerido: [WhatsApp / perfil / menu]
+Sticker: [flecha / link]`
 };
+
 
 async function runAgent(agentType) {
   const input = document.getElementById('input-' + agentType).value.trim();
@@ -893,7 +1085,8 @@ async function runAgent(agentType) {
 
   const brand = getBrandContext();
   const platform = getPlatformContext();
-  const systemPrompt = systemPrompts[agentType](brand, platform);
+  const history = getHistory();
+  const systemPrompt = systemPrompts[agentType](brand, platform, history);
 
   // Show loading
   outPanel.className = 'output-panel visible';
@@ -949,6 +1142,7 @@ async function runAgent(agentType) {
 
     // Add to history
     addHistory(agentType, input, result);
+    saveToHistory(input);
 
   } catch (err) {
     outPanel.innerHTML = `
