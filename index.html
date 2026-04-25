@@ -73,6 +73,7 @@ body::after {
   position: fixed;
   top: 0; left: 0; bottom: 0;
   z-index: 10;
+  overflow-y: auto;
 }
 
 .logo {
@@ -187,6 +188,7 @@ body::after {
 .agent-nav {
   padding: 1rem 1.25rem;
   flex: 1;
+  overflow-y: auto;
 }
 .agent-links { display: flex; flex-direction: column; gap: 4px; }
 .agent-link {
@@ -737,27 +739,6 @@ body::after {
       <div class="output-panel" id="out-stories"></div>
     </div>
 
-    <!-- STORIES -->
-    <div class="agent-panel" id="panel-stories">
-      <div class="input-panel">
-        <div class="input-panel-title">Agente Stories — Secuencia de 5 Slides</div>
-        <div class="quick-prompts">
-          <button class="qp" onclick="fillPrompt('stories', 'Promocion del dia en La Felicitta')">Promo del dia</button>
-          <button class="qp" onclick="fillPrompt('stories', 'Nuevo plato disponible hoy')">Nuevo plato</button>
-          <button class="qp" onclick="fillPrompt('stories', 'Detras de camaras de la cocina')">Detras camaras</button>
-          <button class="qp" onclick="fillPrompt('stories', 'Delivery disponible ahora')">Delivery</button>
-          <button class="qp" onclick="fillPrompt('stories', 'Senal de trading NQ de hoy')">Senal NQ</button>
-        </div>
-        <div class="prompt-row">
-          <textarea class="prompt-textarea" id="input-stories" placeholder="Describe el tema de tus Stories..."></textarea>
-          <button class="run-btn" id="btn-stories" onclick="runAgent('stories')">
-            <span class="run-arrow">📱</span>
-            <span>Crear</span>
-          </button>
-        </div>
-      </div>
-      <div class="output-panel" id="out-stories"></div>
-    </div>
 
     <!-- HISTORIAL -->
     <div class="history-section" id="historySection" style="display:none;">
